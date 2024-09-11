@@ -22,11 +22,13 @@ public class ContaBancaria {
 	
 
 	public ContaBancaria(String nome) {
+		super();
 		this.nome = nome;
 		this.saldo = 0;
 	}
 	
 	public ContaBancaria(String nome, float saldo_inicial) {
+		super();
 		this.nome = nome;
 		this.saldo = saldo_inicial;
 	}
