@@ -89,6 +89,17 @@ public class Aluno {
 		}
 	}
 	
+	public void verificarNiveisTodosAlunosDoWhile(int[] notas) {
+		int i = 0;
+		do {
+			int faixaNota = definirFaixaAluno(notas[i]);
+			verificarNivelAluno(faixaNota);
+			
+			i++;
+		}
+		while (i < notas.length);
+	}
+	
 	public String getNome() {
 		return nome;
 	}

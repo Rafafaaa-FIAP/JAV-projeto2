@@ -14,7 +14,8 @@ public class Teste {
 		
 		int notas[] = { 98, 100, 76, 85, 64, 92 };
 		// aluno.verificarNiveisTodosAlunos(notas);
-		aluno.verificarNiveisTodosAlunosWhile(notas);
+		// aluno.verificarNiveisTodosAlunosWhile(notas);
+		aluno.verificarNiveisTodosAlunosDoWhile(notas);
 	}
 
 }
