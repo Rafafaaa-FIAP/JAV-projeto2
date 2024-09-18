@@ -1,10 +1,11 @@
 package br.com.fiap.heranca;
 
-public class Veiculo {
+public abstract class Veiculo {
 	protected String marca;
 	protected String modelo;
 	protected int ano;
 	protected String chassi;
+	protected float km;
 
 	
 	
@@ -15,6 +16,13 @@ public class Veiculo {
 	public void frear() {
 		System.out.println("O veículo frea.");
 	}
+	
+	public void percorrer(float distancia) {
+		this.km += distancia;
+		System.out.println("O veículo percorreu a distância de " + distancia + "km.");
+	}
+	
+	public abstract float verificarKMPercorrido();
 
 	
 	
@@ -41,5 +49,11 @@ public class Veiculo {
 	}
 	public void setChassi(String chassi) {
 		this.chassi = chassi;
+	}
+	public float getKm() {
+		return km;
+	}
+	public void setKm(float km) {
+		this.km = km;
 	}
 }

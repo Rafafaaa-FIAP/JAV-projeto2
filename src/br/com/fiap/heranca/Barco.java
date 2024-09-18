@@ -9,7 +9,12 @@ public class Barco extends Veiculo {
 		System.out.println("O barco flutua.");
 	}
 
+	@Override
+	public float verificarKMPercorrido() {
+		return km;
+	}
 
+	
 
 	public String getLeme() {
 		return leme;

@@ -9,8 +9,13 @@ public class Moto extends Veiculo {
 		System.out.println("A moto da grau.");
 	}
 
+	@Override
+	public float verificarKMPercorrido() {
+		return km;
+	}
 
 
+	
 	public String getGuidao() {
 		return guidao;
 	}

@@ -12,7 +12,28 @@ public class Carro extends Veiculo {
 	public void verificarAno() {
 		System.out.println("O ano do carro é " + ano);
 	}
+	
+	@Override
+	public void andar() {
+		System.out.println("O carro está andando.");
+	}
 
+	@Override
+	public void frear() {
+		System.out.println("O carro está freando.");
+	}
+	
+	@Override
+	public void percorrer(float kmPercorrido) {
+		this.km += kmPercorrido;
+		System.out.println("O carro percorreu a distância de " + km + "km.");
+	}
+
+	@Override
+	public float verificarKMPercorrido() {
+		return km;
+	}
+	
 	
 	
 	public String getVolante() {
